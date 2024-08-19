@@ -1,4 +1,4 @@
-﻿namespace CryptoTracker.Utils
+﻿namespace CryptoTracker.Models
 {
     public class CryptoTableRow
     {

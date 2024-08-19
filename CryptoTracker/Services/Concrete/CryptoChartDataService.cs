@@ -1,5 +1,5 @@
-﻿using CryptoTracker.Services.Abstract;
-using CryptoTracker.Utils;
+﻿using CryptoTracker.Models;
+using CryptoTracker.Services.Abstract;
 using System.Net.Http.Json;
 
 namespace CryptoTracker.Services.Concrete

@@ -1,4 +1,4 @@
-﻿using CryptoTracker.Utils;
+﻿using CryptoTracker.Models;
 using Microsoft.AspNetCore.Components;
 
 namespace CryptoTracker.Pages
@@ -17,14 +17,14 @@ namespace CryptoTracker.Pages
         }
         private void SetCurrency(string currency)
         {
-            SelectedCurrency= currency;
+            SelectedCurrency = currency;
             WebSocketService.SetOptionsAsync(SelectedCurrency);
         }
         private async void LoadDataAsync()
         {
             WebSocketService.OnDataReceived += UpdateCryptoCurrencies;
             await WebSocketService.ConnectAsync();
-        } 
+        }
         public void Dispose()
         {
             WebSocketService.OnDataReceived -= UpdateCryptoCurrencies;

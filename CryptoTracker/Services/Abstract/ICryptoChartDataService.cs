@@ -1,4 +1,4 @@
-﻿using CryptoTracker.Utils;
+﻿using CryptoTracker.Models;
 
 namespace CryptoTracker.Services.Abstract
 {

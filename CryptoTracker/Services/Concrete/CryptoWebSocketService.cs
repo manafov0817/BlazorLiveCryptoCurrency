@@ -1,9 +1,7 @@
 ﻿using System.Net.WebSockets;
 using System.Text;
 using System.Text.Json;
-using CryptoTracker.Utils;
-using Microsoft.AspNetCore.Components;
-
+using CryptoTracker.Models; 
 public class CryptoWebSocketService : IDisposable
 {
     private ClientWebSocket _webSocket;

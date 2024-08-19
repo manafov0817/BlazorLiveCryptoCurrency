@@ -2,6 +2,7 @@
 using ChartJs.Blazor.Common.Axes;
 using ChartJs.Blazor.LineChart;
 using ChartJs.Blazor.Util;
+using CryptoTracker.Models;
 using CryptoTracker.Services.Abstract;
 using CryptoTracker.Utils;
 using Microsoft.AspNetCore.Components;
