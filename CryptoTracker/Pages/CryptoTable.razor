@@ -1,0 +1,22 @@
+﻿@page "/cryptoTable"
+
+<MudSelect Class="mt-3" Margin="Margin.Dense" Value="SelectedCurrency" T="string" ValueChanged="SetCurrency" Label="Currency" Variant="Variant.Outlined" AnchorOrigin="Origin.BottomCenter">
+    @foreach (string currency in Currencies)
+    {
+        <MudSelectItem Value="@currency">@currency.ToUpper()</MudSelectItem>
+    }
+</MudSelect>
+
+<MudTable Class="mt-3" Items="@cryptoCurrencies" Breakpoint="Breakpoint.None" Striped="true" Hover="true">
+    <HeaderContent>
+        <MudTh>Currency</MudTh>
+        <MudTh>Price</MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd>@context.product_id</MudTd>
+        <MudTd>@context.price</MudTd>
+    </RowTemplate>
+    <PagerContent >
+        <MudTablePager HideRowsPerPage="false" RowsPerPageString=" " PageSizeOptions="pageSizeOptions" />
+    </PagerContent>
+</MudTable>
